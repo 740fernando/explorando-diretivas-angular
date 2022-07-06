@@ -1,5 +1,8 @@
 <h1 class="text-center">teste</h1>
 
-<div [ngStyle] = "{background: count < 5 ? 'red' : 'green'}">
+<div 
+    [ngStyle] = "{background: count < 5 ? 'red' : 'green'}"
+    [ngClass] = "{custom: count>5}"
+>
     <h2  class="text-center">Contador : {{count}} </h2>
 </div>
