@@ -11,7 +11,7 @@ export class MarcaTextoDirective implements OnInit{
   constructor(private elemento: ElementRef) { }
 
   ngOnInit(): void {
-    
+    this.mudarFundo();
   }
   private mudarFundo(cor: string = 'yellow'){
     this.elemento.nativeElement.style.backgroundColor = this.corDeFundo || cor;
