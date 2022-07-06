@@ -63,3 +63,11 @@
     </li>
 </ul>
 
+<!-- iterando com ngTemplate -->
+<ul class="list-group mx-auto my-3 col-3">
+    <ng-template ngFor let-pessoa [ngForOf]="pessoas">
+        <li class="list-group-item">
+            O nome da pessoa é {{pessoa.nome}} {{pessoa.sobrenome}}.
+        </li>
+    </ng-template>
+</ul>
