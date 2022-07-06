@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { MarcaTextoDirective } from './directive/marca-texto.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MarcaTextoDirective
   ],
   imports: [
     BrowserModule,
