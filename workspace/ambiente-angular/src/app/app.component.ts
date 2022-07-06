@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
 
   count = 0;
+  test = 'test';
 
   pessoas = [
     {
@@ -33,12 +34,15 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.pessoa)
     let interval = setInterval(()=> {
       this.count++;
       if(this.count === 10){
         clearInterval(interval)
       }
     }, 1000)
+  }
+
+  private clicou(nome: string): void{
+    console.log('Clicou em mim', nome)
   }
 }
