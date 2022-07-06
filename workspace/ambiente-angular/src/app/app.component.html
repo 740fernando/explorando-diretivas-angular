@@ -1,4 +1,4 @@
-<h1 class="text-center">Angular Diretivas</h1>
+<h1 appMarcaTexto corDeFundo="blue" corDoTexto="black" class="text-center">Angular Diretivas</h1>
 
 <!-- Diretivas de atributo -->
 <div 
@@ -75,7 +75,10 @@
 <p>{{test}}</p>
 
 <!-- Html p/ o component-->
-<button class="btn btn-success list-group mx-auto my-3 col-3" (click)="clicou('Fernando')">Clique</button>
+<div class="col-4 mx-auto my-3">
+    <h3 appMarcaTexto corDeFundo="magenta" corDoTexto="blue">{{nome}}</h3>
+    <button class="btn btn-success col-4 mx-auto" (click)="clicou('Fernando')">Clique</button>    
+</div>
 
 <!-- Two Way data binding -->
 <div class="col-4 mx-auto">
