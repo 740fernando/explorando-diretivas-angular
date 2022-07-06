@@ -76,3 +76,13 @@
 
 <!-- Html p/ o component-->
 <button class="btn btn-success list-group mx-auto my-3 col-3" (click)="clicou('Fernando')">Clique</button>
+
+<!-- Two Way data binding -->
+<div class="col-4 mx-auto">
+    <input type="text" 
+    class="form-control" 
+    placeholder="Digite alguma coisa"
+    [(ngModel)]="text"
+    >
+    <h4>Saida: {{text}} </h4>
+</div>
